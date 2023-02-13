@@ -1,0 +1,45 @@
+.btn_defoult {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    position: relative;
+    // top: -10px;
+
+    span {
+        display: block;
+        background: #000000;
+        border-radius: 2.5px;
+        transition: 0.5s all;
+        position: absolute;
+    }
+    span:nth-child(1) {
+        width: 8px;
+        height: 38px;
+        transform: translate(15px, -15px);
+    }
+    span:nth-child(2) {
+        width: 38px;
+        height: 8px;
+    }
+}
+
+.btn_active {
+    span:nth-child(1) {
+        transform: rotate(45deg) translate(0, -21px);
+    }
+    span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+}
+
+.btn_dottom {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    transform: translate(-38px, -38px);
+}
+
+.btn_done {
+    top: -10px; 
+    margin: 0 45px 15px 0; 
+}
